@@ -1,38 +1,77 @@
-.App {
-  text-align: center;
+
+
+form{
+  background-color: #f3eded1a!important;
+}
+.aboutText{
+  background-color: #0f0e0e54!important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.height{
+  height: 83vh;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.login{
+  background-image: url(./component/images/React-and-Electron.png);
+  background-size: cover;
+  background-position: center;
+}
+.about{
+  background-image: url(./component/images/bannertree.jpg);
+  background-size: cover;
+  background-position: center;
+  /* height: 200vh; */
+  
+}
+.register{
+  background-image: url(./component/images/react-router.png);
+  background-size: cover;
+  background-position: center;
+}
+.navimg{
+  display: block;
+  border-radius: 50%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.homeImg{
+  display: block;
+width: 100%;
+height: 85vh;
+}
+.cardImg{
+  display: block;
+  /* width: 100%;
+  height: 100%; */
+}
+.blogCard{
+  max-height: 90%;
+  cursor: pointer;
+}
+.bloghover:hover{
+  display:block;
+  box-shadow: rgba(0, 0, 0, 0.527) 0px 0px 5px 5px;
+  transform: scale(1.02);
+  transition: all 300ms ease-in-out;
+}
+
+.Page {
+  min-height: 86vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+.bloghover{
+  position: relative;
+  display: block;
+}
+.views{
+  position: absolute;
+  background-color: green;
   color: white;
-}
+ right: 0%;
 
-.App-link {
-  color: #61dafb;
+ 
+ display: block;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+ .nrViews{
+  background-color: rgb(70, 8, 70);
+ }
