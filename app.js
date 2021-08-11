@@ -5,8 +5,8 @@ const errorsHandler = require("./middlewares/errors");
 const UserRoute = require("./routes/UserRoutes");
 const BlogRoute = require("./routes/BlogRoutes");
 const { port, mongoURL } = require("./config/env");
-const cors = require('cors')
-const auth = require('./middlewares/Auth')
+const cors = require("cors");
+const auth = require("./middlewares/Auth");
 
 mongoose.connect(mongoURL, {
   useNewUrlParser: true,
@@ -20,7 +20,7 @@ mongoose.connect(mongoURL, {
 
 const app = express();
 app.use(core);
-app.use(cors({origin:'*',exposedHeaders:'auth-token'}))
+app.use(cors({ origin: "*", exposedHeaders: "auth-token" }));
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 

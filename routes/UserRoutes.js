@@ -5,14 +5,13 @@ const {
   getUser,
   signUp,
   loginUser,
-  updateUser
+  updateUser,
 } = require("../controllers/UserController");
 
 UserRoute.get("/", getAllUsers);
 UserRoute.get("/:id", getUser);
 UserRoute.post("/register", signUp);
-UserRoute.post('/login',loginUser)
-UserRoute.post('/:id',  updateUser)
+UserRoute.post("/login", loginUser);
+UserRoute.post("/:id", updateUser);
 
-
-module.exports=UserRoute
+module.exports = UserRoute;

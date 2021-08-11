@@ -23,11 +23,10 @@ export default function Login() {
       body: JSON.stringify(user),
     })
       .then((res) => {
-      console.log(res);
-       return res.json();
+        console.log(res);
+        return res.json();
       })
       .then((result) => {
-        
         console.log(result);
         if (result.success) {
           console.log(result.data);

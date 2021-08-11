@@ -3,11 +3,10 @@ const createError = require("http-errors");
 const jwt = require("jsonwebtoken");
 const jwtKey = require("../config/env").jwtKey;
 
-
 const auth = async (req, res, next) => {
   const token = req.header("Authorization");
   const decoded = jwt.verify(token, jwtKey);
-  
+
   try {
     if (decoded) {
       const user = await UsersModel.findById(decoded.id);

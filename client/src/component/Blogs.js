@@ -50,7 +50,6 @@ export default function Blogs() {
                   />
                 </Link>
                 <div className="card-body">
-                  
                   <p className="card-title fw-bold ">{blog.title}</p>
                   <p className="card-text bg-white">
                     By: {blog.userId.userName}.{" "}

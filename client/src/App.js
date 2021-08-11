@@ -30,7 +30,6 @@ export default function App() {
       // console.log(userData);
       setUser(userData.data);
     }
-  
   };
   const setAuthToken = async () => {
     const token = localStorage.getItem("token");
